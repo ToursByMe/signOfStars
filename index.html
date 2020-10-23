@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>ZodiaCO</title>
+</head>
+
+<body class="bg-dark">
+    <div class="container">
+        <div class="jumbotron bg-transparent text-light">
+            <h1 class="display-4">Hello, start sign!</h1>
+            <p class="lead">This is a simple exercise to get your star sign</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <div class="row">
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Day</span>
+                        </div>
+                        <input type="number" class="form-control" id="myDay" min="1" max="31" aria-label="Default"
+                            aria-describedby="myDay">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" >Month</span>
+                        </div>
+                        <input type="number" min="1" max="12" class="form-control" aria-label="Default"
+                            aria-describedby="myMonth" id="myMonth">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex flex-row justify-content-center mt-3">
+                <div class="col-3">
+                    <a class="btn btn-dark text-light text-capitalize btn-lg" href="#" onclick="zodiac()" role="button">function switch</a>
+                </div>
+                <div class="col-3">
+                    <a class="btn btn-dark text-light text-capitalize btn-lg" href="#" onclick="zodiac2()" role="button">function if/switch</a>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <div  class="display-4 text-center" id="answerMe">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Remember you fool:jQuery, popper and btp-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+
+    <!--font awesome-->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="functions.js"></script>
+</body>
+
+</html>
